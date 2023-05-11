@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Моя страница</h1>
+</header>
+
+<div class="row">
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">Главная</a>
+    </div>
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">Главная</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">Главная</a>
+    </div>
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">Книжка</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">Афиша</a>
+    </div>
+    <div class="col">
+        <a class="btn" href="{% url 'home' %}">связь</a>
+    </div>
+</div>
+
+</body>
+</html>
